@@ -1,0 +1,58 @@
+.decisions {
+    min-height: 870px;
+    padding: 75px 0 75px 0;
+    background: url('../../img/bg/decisions-bg.jpg') center (center / cover) no-repeat;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        width: 680px;
+        margin: 0 auto;
+        text-align-last: center;
+    }
+    &__tabs-wrapper {
+        width: 850px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px #fff solid;
+        border-radius: 8px;
+    }
+    &__tab-item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        border-right: 1px solid #919493;
+        padding: 0 25px 0 25px;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+#prengi-slider_wrapper {
+    margin-top: 40px;
+}
+.prengi-slider_photo {
+    width: 950px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+#prengi-slider_prev {
+    width: 30px;
+    color: #00c2f0;
+}
+#prengi-slider_next {
+    width: 30px;
+    color: #00c2f0;
+}

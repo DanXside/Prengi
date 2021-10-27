@@ -1,0 +1,27 @@
+.advantages {
+    min-height: 1330px;
+    padding: 80px 0 80px 0;
+    &__title {
+        width: 375px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: $main-color-2;
+        text-align: center;
+        text-align-last: center;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template: repeat(3, 355px) / repeat(2, 570px);
+        grid-auto-rows: 355px;
+        justify-content: center;
+    }
+    &__item {
+        width: 570px;
+        img {
+            width: 100%;
+        }
+    }
+}
