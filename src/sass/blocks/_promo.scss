@@ -57,17 +57,7 @@
             margin: 0;
         }
         &-btn {
-            width: 240px;
-            height: 60px;
-            background-color: $main-color;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: uppercase;
-            cursor: pointer;
-            box-shadow: -2px 0px 10px -1px rgba(7, 7, 7, 0.12) inset;
+            @include main-btn;
         }
     }
     &__block_right {
