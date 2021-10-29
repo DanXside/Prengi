@@ -28,5 +28,10 @@
         margin: 0 auto;
         margin-top: 30px;
         @include main-btn;
+        transition: 0.5s all;
+        &:hover {
+            width: 280px;
+            background-color: #029bc2;
+        }
     }
 }

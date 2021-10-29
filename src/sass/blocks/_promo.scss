@@ -25,8 +25,9 @@
         a {
             text-decoration: none;
             color: #fff;
+            transition: 0.3s all;
             &:hover {
-                color: #fff;
+                color: $main-color;
             }
         }
     }
@@ -58,6 +59,11 @@
         }
         &-btn {
             @include main-btn;
+            transition: 0.5s all;
+            &:hover {
+                width: 280px;
+                background-color: #029bc2;
+            }
         }
     }
     &__block_right {

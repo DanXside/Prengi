@@ -47,6 +47,7 @@
                 z-index: -1;
                 top: -30px;
                 right: -20px;
+                animation: increase 3s infinite alternate;
             }
         }
         &_descr {
@@ -87,6 +88,7 @@
                 z-index: -1;
                 top: -30px;
                 right: 293px;
+                animation: increase 3s infinite alternate ;
             }
         }
         &_descr {
