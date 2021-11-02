@@ -243,7 +243,26 @@
             }
         }
         &__items {
-            display: none;
+            visibility: visible;
+            position: absolute;
+            width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $main-color;
+            top: 0;
+            left: -1500px;
+            z-index: 10;
+        }
+        &__item {
+            font-size: 20px;
+            a {
+                &:hover {
+                    color: $main-color-2;
+                }
+            }
         }
     }
     .hamburger {
@@ -265,5 +284,232 @@
         span.long {
             width: 36px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .footer {
+        &__wrapper {
+            width: 300px;
+            margin: 0 auto;
+        }
+        &__items-module {
+            display: none;
+        }
+        &__items-industries {
+            display: none;
+        }
+        &__items-about {
+            display: none;
+        }
+        &__items-company {
+            width: 300px;
+            align-items: center;
+            &_descr {
+                text-align: center;
+            }
+        }
+    }
+    .access {
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 26px;
+        }
+    }
+    .data {
+        min-height: 1160px;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            right: 100px;
+            font-size: 26px;
+        }
+        &__storage {
+            width: 576px;
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            &_title {
+                font-size: 36px;
+                margin-top: 200px;
+            }
+            &_descr {
+                width: 400px;
+                font-size: 20px;
+                text-align: center;
+                text-align-last: center;
+                margin-top: 0;
+                margin-bottom: 120px;
+            }
+        }
+        &__rent {
+            width: 576px;
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h3 {
+                font-size: 36px;
+                margin-top: 200px;
+            }
+            &_descr {
+                width: 400px;
+                font-size: 20px;
+                text-align: center;
+                text-align-last: center;
+                margin-top: 0;
+                margin-bottom: 120px;
+            }
+        }
+    }
+    .advantages {
+        min-height: 1200px;
+        padding: 80px 0 80px 0;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            width: 556px;
+        }
+    }
+    .decisions {
+        &__title {
+            width: 500px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        &__tabs-wrapper {
+            width: 500px;
+        }
+        &__tab-item {
+            padding: 0 8px 0 20px;
+        }
+    }
+    .prengi-slider_photo {
+        width: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .footer {
+        &__divider {
+            width: 300px;
+        }
+    }
+    .access {
+        &__title, &__subtitle {
+            font-size: 24px;
+        }
+    }
+    .data {
+        &__title {
+            width: 320px;
+            right: 0;
+            font-size: 24px;
+        }
+        &__storage {
+            width: 320px;
+            &_title {
+                font-size: 26px;
+            }
+            &_descr {
+                width: 300px;
+            }
+        }
+        &__rent {
+            width: 320px;
+            h3 {
+                font-size: 24px;
+            }
+            &_descr {
+                width: 300px;
+            }
+        }
+    }
+    .advantages {
+        &__title {
+            width: 300px;
+            font-size: 26px;
+        }
+        &__item {
+            width: 320px;
+        }
+    }
+    .decisions {
+        min-height: 400px;
+        &__tabs-wrapper {
+            display: none;
+        }
+        &__title {
+            width: 240px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .prengi-slider_photo {
+        width: 180px;
+    }
+    .futures {
+        &__item-q, &__item-t {
+            width: 300px;
+            &_photo {
+                width: 300px;
+            }
+            &_descr {
+                top: 150px;
+                left: 25px;
+            }
+        }
+    }
+    .promo {
+        &__block_right {
+            display: none;
+        }
+        &__block_left {
+            height: 230px;
+            align-items: center;
+            margin-top: 120px;
+            &-title {
+                text-align: center;
+                font-size: 26px;
+            }
+            &-descr {
+                text-align: center;
+                margin-top: 20px;
+            }
+            &-btn {
+                margin-top: 20px;
+            }
+        }
+        &__items {
+            &.active {
+                width: 160px;
+            }
+        }
+        &__item {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .hamburger {
+        top: 40px;
+        right: 40px;
     }
 }
